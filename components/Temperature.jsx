@@ -6,7 +6,7 @@ import Image from "next/image";
 const Temperature = async ({ lat, lon }) => {
   const temperatureData = await getTemperatureData(lat, lon);
 
-  const {temp,feels_like }= temperatureData;
+  const { temp, feels_like } = temperatureData;
   return (
     <Card>
       <h6 className="feature-name">Current Temperature</h6>
