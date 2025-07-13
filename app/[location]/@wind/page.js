@@ -1,8 +1,11 @@
+import Wind from "@/components/Wind"
 
 
-const WindPage = () => {
+const WindPage = ({ params: { location }, searchParams: { latitude, longitude } }) => {
   return (
-    <div>WindPage</div>
+    <>
+    <Wind  lat={latitude} lon={longitude} />
+    </>
   )
 }
 

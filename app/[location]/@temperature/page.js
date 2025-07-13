@@ -1,7 +1,10 @@
+import Temperature from "@/components/Temperature"
 
-const TemperaturePage = () => {
+const TemperaturePage = ({ params: { location }, searchParams: { latitude, longitude } }) => {
   return (
-    <div>TemperaturePage</div>
+    <>
+      <Temperature lat={latitude} lon={longitude} />
+    </>
   )
 }
 
